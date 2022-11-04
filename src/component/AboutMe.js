@@ -15,7 +15,7 @@ const useStyles = makeStyles(theme =>({
     
     Title:{
         display: "flex",
-        marginLeft: "auto",
+        marginLeft: 250,
         marginRight:" auto",
         fontStyle: "normal",
         fontWeight: "bold",

@@ -24,7 +24,8 @@ const useStyles = makeStyles(theme =>({
 
     },
     listIcons:{
-        display:"flex"
+        display:"flex",
+
     },
     icons:{
         color: "black",
@@ -32,6 +33,8 @@ const useStyles = makeStyles(theme =>({
         cursor: "pointer",
         fontSize: "large",
         fontWeight: 600,
+        textDecoration: "none",
+
     },
     HomePageLogo:{
         display: "flex",
@@ -47,7 +50,7 @@ export default function NavBar() {
       <div className={classes.root}>
         <div className={classes.navBarContainer}>
             <div className={classes.HomePageLogo}>
-                <Link to="/"><img src="/HomePage.png" width="200px" height="150px" alt="scalapay logo"/></Link>
+                <Link to="/"><img src="/HomePage.png" width="200px" height="80px" alt="scalapay logo"/></Link>
                 <h1>Portfolio MK</h1>
             </div>
             <div className={classes.listIcons}>
