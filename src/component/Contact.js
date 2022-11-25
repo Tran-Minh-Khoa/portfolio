@@ -6,7 +6,6 @@ import PhoneIcon from '@material-ui/icons/Phone';
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import { Link } from "react-router-dom";
-import ContactForm from "./ContactForm";
 const useStyles = makeStyles(theme =>({
     root:{
         padding: 0,
