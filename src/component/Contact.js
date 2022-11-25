@@ -6,6 +6,7 @@ import PhoneIcon from '@material-ui/icons/Phone';
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import { Link } from "react-router-dom";
+import ContactForm from "./ContactForm";
 const useStyles = makeStyles(theme =>({
     root:{
         padding: 0,
@@ -57,14 +58,17 @@ const useStyles = makeStyles(theme =>({
 
 }));
 
-export default function AboutMe() {
+export default function Contact() {
     const classes = useStyles();
     return (
       <div className={classes.root}>
         <NavBar/>
+        <h1 className={classes.aboutRighth1}>Contact Me</h1>
+                <img src="/ContactUs.png" width="350px" />
         <section className={classes.aboutSection}>
             <div class="about-left">
-                <img src="/25231.png" width="350px" />
+                <h1 className={classes.aboutRighth1}>Contact Me</h1>
+                <img src="/ContactUs.png" width="350px" />
             </div>
 
             <div className={classes.aboutRight}>

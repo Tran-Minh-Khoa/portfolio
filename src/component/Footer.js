@@ -1,10 +1,11 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import Avatar from '@material-ui/core/Avatar';
 
 const useStyles = makeStyles(theme =>({
    footer:{
-    backgroundColor: "rgb(41, 38, 38)",
+    backgroundColor: "#967E76",
     width: "100%",
     color:"white",
     boxSizing: "border-box",
@@ -14,6 +15,7 @@ const useStyles = makeStyles(theme =>({
    },
    container2:{
     padding:0,
+    marginTop:0,
     fontFamily: "New York Extra Large",
     fontStyle: "normal",
     fontWeight: "normal",
@@ -22,16 +24,11 @@ const useStyles = makeStyles(theme =>({
     letterSpacing: "0.1em",
    },
    container3:{
-    fontFamily: "New York Small",
-    fontStyle: "normal",
-    fontWeight: "normal",
-    fontSize: "19px",
-    lineHeight: "140%",
-/* or 22px */
-    textAlign: "center",
-    width : "488px",
-    marginLeft: "auto",
-    marginRight: "auto",
+    display: "flex",
+  direction:"row",
+  justifyContent:"center",
+  alignItems:"center",
+  gap:10,
    },
    container4:{
     display: "flex",
@@ -42,8 +39,10 @@ const useStyles = makeStyles(theme =>({
     display: "flex",
     color:"white",
     textDecoration: "none",
-
+   },
+   logo:{
    }
+
 }));
 
 export default function Footer() {
@@ -51,18 +50,18 @@ export default function Footer() {
     return (
     
         <div className={classes.footer}>
-        <div className={classes.container2}>
-            <p>Tran Minh Khoa</p>
-        </div>
+       
+
 
         <div className={classes.container3}>
-            <p>The page to store my projects in university. This page is only used for storing projects.</p>
-            <p>Contact me at:</p>
+        <Avatar variant="rounded" src="/Linkedin.png"  className={classes.logo}></Avatar>
+        <Avatar variant="rounded" src="/25231.png" className={classes.logo}></Avatar>
+        <Avatar variant="rounded" src="/25237.png" className={classes.logo}></Avatar>
+        <Avatar variant="rounded" src="/25872.png" className={classes.logo}></Avatar>
+
         </div>
         <div className={classes.container4}>
-      <a href="" className={classes.container5}>Slack</a>
-            <a href=""className={classes.container5}>Email</a>
-            <a href=""className={classes.container5}>Facebook</a>
+      <p>@ 2022 by Tran MInh Khoa</p>
         
         </div>
 

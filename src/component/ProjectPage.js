@@ -14,7 +14,7 @@ const useStyles = makeStyles(theme =>({
     },
     card:{
         maxWidth:260,
-        backgroundColor:'#f5e5cf'
+        backgroundColor:'#EEE3CB'
     },
     wrapperCard:{
         display: "flex",
@@ -39,7 +39,7 @@ export default function () {
           component="img"
           alt="Contemplative Reptile"
           width="260px" height="260px"
-          image="/SnakeHunter.png"
+          image="/25231.png"
           title="Contemplative Reptile"
         />
         <CardContent>
@@ -59,7 +59,7 @@ export default function () {
           component="img"
           alt="Contemplative Reptile"
           width="260px" height="260px"
-          image="/CS201.png"
+          image="/25231.png"
           title="Contemplative Reptile"
           display="flex"
         />
@@ -75,48 +75,7 @@ export default function () {
       </CardActionArea>
     </Card>
         </div>  
-        <div className={classes.wrapperCard}>
-        <Card className={classes.card} >
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          alt="Contemplative Reptile"
-          height="140"
-          image="/SnakeHunter.png"
-          title="Contemplative Reptile"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            SnakeHunter
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-    </Card>
-    <Card className={classes.card} >
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          alt="Contemplative Reptile"
-          height="140"
-          image="/SnakeHunter.png"
-          title="Contemplative Reptile"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            SnakeHunter
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="a" href="https://github.com/Thanh-Duy-03/TEAM"  target="_blank">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-    </Card>
-        </div>  
+      
         </div>
         <Footer/>
       </div>

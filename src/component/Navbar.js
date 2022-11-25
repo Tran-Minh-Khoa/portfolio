@@ -16,7 +16,7 @@ const useStyles = makeStyles(theme =>({
     },
     navBarContainer:{
         padding: "1% 8%",
-        background: "#A8B087",
+        background: "#B7C4CF",
         position: "fix",
         display: "flex",
         justifyContent: "space-between",
@@ -55,9 +55,9 @@ export default function NavBar() {
             </div>
             <div className={classes.listIcons}>
                 <Link to="/" className={classes.icons}>Home</Link>
-                <Link to="/about" className={classes.icons}>about</Link>
-                <Link to="/project" className={classes.icons}>project</Link>
-                <Link to="/references" className={classes.icons}>references</Link>
+                <Link to="/about" className={classes.icons}>About</Link>
+                <Link to="/project" className={classes.icons}>Project</Link>
+                <Link to="/references" className={classes.icons}>Contact</Link>
             </div>
             
         </div>

@@ -7,6 +7,8 @@ import {
 } from "react-router-dom";
 import HomePage from './component/HomePage';
 import ProjectPage from './component/ProjectPage';
+import AboutMe from './component/AboutMe';
+import Contact from './component/Contact';
 function App() {
   return (
     <div className="App">
@@ -29,13 +31,13 @@ function App() {
           <Route exact path="/" element={<HomePage/>}/>
         </Routes>
         <Routes>
-          <Route exact path="/about" element={<HomePage/>}/>
+          <Route exact path="/about" element={<AboutMe/>}/>
         </Routes>
         <Routes>
           <Route exact path="/project" element={<ProjectPage/>}/>
         </Routes>
         <Routes>
-          <Route exact path="/references" element={<HomePage/>}/>
+          <Route exact path="/references" element={<Contact/>}/>
         </Routes>
     </Router>
     </div>
