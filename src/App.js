@@ -31,13 +31,13 @@ function App() {
           <Route exact path="/" element={<HomePage/>}/>
         </Routes>
         <Routes>
-          <Route exact path="/about" element={<AboutMe/>}/>
+          <Route exact path="/About" element={<AboutMe/>}/>
         </Routes>
         <Routes>
-          <Route exact path="/project" element={<ProjectPage/>}/>
+          <Route exact path="/Project" element={<ProjectPage/>}/>
         </Routes>
         <Routes>
-          <Route exact path="/references" element={<Contact/>}/>
+          <Route exact path="/Contact" element={<Contact/>}/>
         </Routes>
     </Router>
     </div>

@@ -1,11 +1,8 @@
 import NavBar from "./Navbar";
 import { makeStyles } from '@material-ui/core/styles';
 import Footer from "./Footer";
-import HomeIcon from '@material-ui/icons/Home';
-import PhoneIcon from '@material-ui/icons/Phone';
-import Avatar from '@material-ui/core/Avatar';
-import Button from '@material-ui/core/Button';
-import { Link } from "react-router-dom";
+import TextField from '@material-ui/core/TextField';
+import { Button } from "@material-ui/core";
 const useStyles = makeStyles(theme =>({
     root:{
         padding: 0,
@@ -44,15 +41,22 @@ const useStyles = makeStyles(theme =>({
     display:"flex",
     direction:"row",
     justifyContent:"space-betwwen",
-    
+    marginBottom: "20px",
+    gap:10,
    },
    container:
    {
    
         display: "flex",
-      direction:"row",
+      direction:"column",
       alignItems:"center",
       gap:10,
+      height:"100%",
+   },
+   margin:
+   {
+    width:"100%",
+    marginBottom: "20px",
    }
 
 }));
@@ -64,46 +68,37 @@ export default function Contact() {
         <NavBar/>
         <h1 className={classes.aboutRighth1}>Contact Me</h1>
                 <img src="/ContactUs.png" width="350px" />
-        <section className={classes.aboutSection}>
-            <div class="about-left">
-                <h1 className={classes.aboutRighth1}>Contact Me</h1>
-                <img src="/ContactUs.png" width="350px" />
-            </div>
-
-            <div className={classes.aboutRight}>
-                <h4>Tran Minh Khoa's Story</h4>
-                <h1 className={classes.aboutRighth1}>About Me</h1>
-                <p className={classes.aboutRightp}>
-                    I am an enthusiastic, self-motivated, reliable, responsible and hard working person.
-                     I am a mature team worker and adaptable to all challenging situations. 
-                     I am able to work well both in a team environment as well as using own initiative.
-                     I am able to work well under pressure and adhere to strict deadlines.
-                </p>
-                <Link to="/Minh Khoa.pdf" target="_blank" download><Button variant="contained" color="primary" >Read more</Button></Link>
-
-
-               <div className={classes.list}>
-                <HomeIcon/>
-                <p className={classes.aboutRightp} > address: 227 Nguyễn Văn Cừ, Phường 4, Quận 5, Thành phố Hồ Chí Minh</p>
-               </div>
-               <div className={classes.list}>
-                <PhoneIcon/>
-                <p className={classes.aboutRightp} > Phone: 0924936662</p>
-               </div>
-               <h3>My Experties</h3>
-                <div className={classes.container}>
-                    
-                    <Avatar variant="rounded" src="/html.png" className={classes.logo}></Avatar>
-                    <Avatar variant="rounded" src="/CSS.png" className={classes.logo}></Avatar>
-                    <Avatar variant="rounded" src="/logo512.png" className={classes.logo}></Avatar>
-                    <Avatar variant="rounded" src="/javaScrip.png" className={classes.logo}></Avatar>
-                    <Avatar variant="rounded" src="/nodejs.png" className={classes.logo}></Avatar>
-
-
-                </div>
-                </div>
-
-        </section>
+                <section className={classes.aboutSection}>
+                <form>
+                    <div className={classes.list}>
+                    <TextField id="outlined-search" label="Your Name"  variant="outlined" />
+       <TextField id="outlined-search" label="Email"  variant="outlined" />
+                    </div>
+       
+       <TextField id="outlined-search" label="Massage"  variant="outlined" className={classes.margin} />
+       <Button variant="contained" color="primary">on Submit</Button>
+       </form>
+       <div className={classes.aboutRight}>
+       <div className={classes.list}>
+        <img src='/addressIcon.png' width="60px"/>
+        <p>address: 227 Nguyễn Văn Cừ, Phường 4, Quận 5, Thành phố Hồ Chí Minh</p>
+       </div>
+       <div className={classes.list}>
+        <img src='/Email.png' width="60px"/>
+        <p>Mail: tmkhoa21@fitus.edu.vn</p>
+       </div>
+       <div className={classes.list}>
+        <img src='/FaceBook.png' width="60px"/>
+        <p>address: 227 Nguyễn Văn Cừ, Phường 4, Quận 5, Thành phố Hồ Chí Minh</p>
+       </div>
+       <div className={classes.list}>
+        <img src='/Slack.png' width="60px"/>
+        <p>address: 227 Nguyễn Văn Cừ, Phường 4, Quận 5, Thành phố Hồ Chí Minh</p>
+       </div>
+       </div>
+    </section>
+    
+    
         <Footer/>
       </div>
     );

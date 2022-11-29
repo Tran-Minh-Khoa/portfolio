@@ -55,9 +55,9 @@ export default function NavBar() {
             </div>
             <div className={classes.listIcons}>
                 <Link to="/" className={classes.icons}>Home</Link>
-                <Link to="/about" className={classes.icons}>About</Link>
-                <Link to="/project" className={classes.icons}>Project</Link>
-                <Link to="/references" className={classes.icons}>Contact</Link>
+                <Link to="/About" className={classes.icons}>About</Link>
+                <Link to="/Project" className={classes.icons}>Project</Link>
+                <Link to="/Contact" className={classes.icons}>Contact</Link>
             </div>
             
         </div>
